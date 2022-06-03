@@ -1,13 +1,19 @@
 import React from 'react';
 import './App.css';
+import About from './components/About';
+import Contacts from './components/Contacts';
+import Header from './components/Header';
 import example from './data/example.json'
 
 function App() {
+  const name = `Hi, my name is ${example.name}`
+  const bio = `My short biography - ${example.biography}`
   return (
     <div className="App">
-      <p>Hi, my name is {example.name}</p>
-      <p>My short biography - {example.biography}</p>
-      <p>Use {example.contacts} to contact me</p>
+      <Header headerTitle='Let me introduce myself!'></Header>
+      <About text={name}></About>
+      <About text={bio}></About>
+      <Contacts data={example.contacts}></Contacts>
     </div>
   );
 }

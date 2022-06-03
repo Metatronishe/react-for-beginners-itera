@@ -1,5 +1,9 @@
 {
     "name": "Alex",
     "biography": "qa engineer",
-    "contacts": "05055522233"
+    "contacts": [
+        "Facebook link",
+        "LinkedIn link",
+        "050123456789"
+    ]
 }
